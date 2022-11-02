@@ -4,12 +4,16 @@ import {
   Route,
 } from "react-router-dom";
 
-
+import HomePage from "./pages/HomePage"
+import PortfolioPage from "./pages/PortfolioPage"
+import ContactPage from "./pages/ContactPage"
 
 
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import NotFoundPage from "./pages/NotFoundPage";
+import NavBar from "./components/NavBar/NavBar";
 
 
 
@@ -17,16 +21,20 @@ import './App.css';
 
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" />
-        <Route path="/portfolio" />
-        <Route path="/contact" />
-        <Route path="/extras" />
-      </Routes>
-    </BrowserRouter>
-  )
+    return (
+      <BrowserRouter>
+
+        <Routes>
+          <Route exact path="/" element={ <HomePage /> } />
+          <Route exact path="/portfolio" element={ <PortfolioPage /> } />
+          <Route exact path="/contact" element={ <ContactPage /> } />
+          
+          <Route path="*" element={ <NotFoundPage /> } />
+
+        </Routes>
+
+      </BrowserRouter>
+    )
 }
 
 export default App;
