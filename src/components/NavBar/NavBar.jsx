@@ -28,17 +28,17 @@ function NavBar() {
                 <ul>
                     <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
                         <li>
-                            Home
+                            <FaIcons.FaHome /> Home
                         </li>
                     </NavLink>
                     <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
                         <li>
-                            Portfolio
+                            <FaIcons.FaToolbox /> Portfolio
                         </li>
                     </NavLink>
                     <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/contact" end>
                         <li>
-                            Contact
+                            <FaIcons.FaPhoneSquareAlt /> Contact
                         </li>
                     </NavLink>
                 </ul>

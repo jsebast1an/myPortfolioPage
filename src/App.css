@@ -12,3 +12,10 @@ a {
 .containerForPages {
   display: flex;
 }
+
+.flexRowWrapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
