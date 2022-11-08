@@ -1,13 +1,72 @@
-.active {
-    color: rgb(126, 0, 236);
-    font-weight: bold;
-    box-shadow: inset;
+.sideBar ul a {
+    text-decoration: none;
+    font-style: none;
+    text-decoration-color: none;
+    color: inherit;
 }
-
+.sideBar .picContainer {
+    margin: 0 auto;
+}
+.sideBar .menuContainer {
+    margin: 0 auto;
+}
+/* sidebar > span hover */
+.sideBar span {
+    position: absolute;
+    background-color: rgb(44, 43, 43);
+    transition: all 0.3s ease-in-out;
+}
+.sideBar span:nth-child(1) {
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left:-100%;
+}
+.sideBar span:nth-child(2) {
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right:-100%;
+}
+.sideBar span:nth-child(3) {
+    width: 4px;
+    height: 100%;
+    bottom: -100%;
+    left:0;
+}
+.sideBar span:nth-child(4) {
+    width: 4px;
+    height: 100%;
+    top: -100%;
+    right:0;
+}
+.sideBar:hover span:nth-child(1) {
+    left:0;
+    transform:scale(1.05,1.05)
+}
+.sideBar:hover span:nth-child(2) {
+    right:0;
+    transform:scale(1.05,1.05)
+}
+.sideBar:hover span:nth-child(3) {
+    bottom: 0;    
+    transform:scale(1.05,1.05)
+}
+.sideBar:hover span:nth-child(4) {
+    top:0;
+    transform:scale(1.05,1.05)
+}
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+.active {
+    color: rgb(37, 0, 69);
+    font-weight: bold;
+}
+.active li::after {
+    content: ' ✔';
+}
 .navBar {
     background-color: #4621fd;
-background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
-
+    background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
     height: 80px;
     display: flex;
     justify-content: flex-start;
@@ -18,22 +77,44 @@ background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
     font-size: 2rem;
     background: none;
 }
-
 .sideBar {
-    background-color: #4621fd;
-    background-image: linear-gradient(19deg, #4621fd 0%, #7330bf 51%, #B721FF 100%);
-    height: 100vh;
+    border: inset;
+    background-color: white;
+    height: 75vh;
     width: 300px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     position: relative;
     top: 0;
+    overflow: hidden;
     /* left: -100%; */
-    transition: 850ms;
+    background: linear-gradient(to left, white 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+    background-size: 300% 100%;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.sideBar:hover {
+    background-position: left;
+    border: none;
+}
+.sideBar:hover h5 {
+    color: white;
+    transform: scale(1.05, 1.05);
+}
+.sideBar:hover ul li {
+    transform: scale(1.05, 1.05);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    background-position: right;
+    color: rgb(217, 217, 217);
+}
+.sideBar:hover img {
+    transform: scale(1.05, 1.05);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 .sideBar div {
-    margin: 1rem auto
+    margin: 1rem auto;
+    text-align:center
 }
 .sideBar div:nth-child(1) {
     display: flex;
@@ -41,7 +122,13 @@ background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
     align-items: center;
 }
 .sideBar img {
+    margin-top: 1.3rem;
     border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.sideBar img:hover {
+    box-shadow:1px 1px 5px 4px #000000; 
+    border-radius: 0%;
 }
 .sideBar h5 {
     margin-top: 2rem;
@@ -53,15 +140,18 @@ background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
 }
 .sideBar ul li {
     padding: 6px 35px;
-    box-shadow: 3px 3px 15px black;
     border-radius: 5px;
-    background-color: white;
+    background: linear-gradient(to left, #202339 11%, #1f2237 22%, #1b1e2f 33%, #fefcff 40%,white 85% ) left;
+    background-size: 300% 100%;
     text-align: center;
     list-style: none;
     margin: 1rem auto;
     transition: 0.3s;
 }.sideBar ul li:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: 3px 3px 25px rgb(221, 144, 251);
-    background-color: rgb(224, 255, 255);
+    color: white;
+    font-weight: 900;
+    transform: scale(1.03,1.03);
+    box-shadow: 3px 3px 25px rgb(147, 147, 147);
+    background-color: rgb(255, 255, 255);
+
 }

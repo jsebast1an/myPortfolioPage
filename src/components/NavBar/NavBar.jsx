@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import profilePic from '../../imgs/max2.jpg'
 /* css */
 import './navBar.css'
+import '../../App.css'
 
 function NavBar() {
   return (
@@ -12,12 +13,18 @@ function NavBar() {
             <FaIcons.FaBars className='nav-bars' />
         </div> */}
         <div className='sideBar'>
-            <div>
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div className='picContainer'>
                 <img src={profilePic} width={150} height={150} alt='me'></img>
                 <h5>Juan Sebastían López</h5>
             </div>
 
-            <div>
+            <div className='menuContainer'>
                 <ul>
                     <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
                         <li>

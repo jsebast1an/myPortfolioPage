@@ -7,15 +7,12 @@ import {
 import HomePage from "./pages/HomePage"
 import PortfolioPage from "./pages/PortfolioPage"
 import ContactPage from "./pages/ContactPage"
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NotFoundPage from "./pages/NotFoundPage";
-import NavBar from "./components/NavBar/NavBar";
-
-
 
 
 
