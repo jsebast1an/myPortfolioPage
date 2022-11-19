@@ -10,12 +10,27 @@
 .sideBar .menuContainer {
     margin: 0.5rem auto;
 }
+.sideBar {
+    background-color: white;
+    height: 75vh;
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    /* left: -100%; */
+    background: linear-gradient(to left, #252326 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+    background-size: 300% 100%;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
 /* sidebar > span hover */
 .sideBar span {
     position: absolute;
-    background-color: #1900ff;
-    transition: all 0.3s ease-in-out;
-
+    background-color: #171717 ;
+    transition: all 0.4s ease-in-out;
 }
 .sideBar span:nth-child(1) {
     width: 100%;
@@ -62,8 +77,9 @@
     color: rgb(37, 0, 69);
     font-weight: bold;
 }
-.active li::after {
-    content: ' ✔';
+
+.active li {
+    box-shadow: 1px 1px 12px #bfb9b9 !important;
 }
 /* .navBar {
     background-color: #4621fd;
@@ -78,22 +94,7 @@
     font-size: 2rem;
     background: none;
 } */
-.sideBar {
-    background-color: white;
-    height: 75vh;
-    width: 300px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    /* left: -100%; */
-    background: linear-gradient(to left, white 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
-    background-size: 300% 100%;
-    transition-duration: .5s;
-    transition-delay: 0s;
-}
+
 .sideBar:hover {
     background-position: left;
     border: none;
@@ -110,6 +111,7 @@
 }
 .sideBar:hover img {
     transform: scale(1.05, 1.05);
+    border-radius: 0px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 .sideBar div {
@@ -127,13 +129,14 @@
     transition: all 0.2s ease-in;
 }
 .sideBar img:hover {
-    box-shadow:1px 1px 5px 4px #000000; 
-    border-radius: 0%;
+    box-shadow:1px 1px 5px 4px #bfb9b9; 
+    transform: scale(1.05, 1.05);
 }
 .sideBar h5 {
     margin-top: 2rem;
     font-weight: 900;
     letter-spacing: 1.2px;
+    color: #c8cad5;
 }
 .sideBar ul {
     padding: 0;
@@ -143,12 +146,13 @@
     align-items: center;
     padding: 6px 35px;
     border-radius: 5px;
-    background: linear-gradient(to left, #202339 11%, #1f2237 22%, #1b1e2f 33%, #fefcff 40%,white 85% ) left;
+    background: linear-gradient(to left, #2d3150 11%, #2f3454 22%, #2c314b 33%, #42284f 40%,rgb(97, 39, 39) 85% ) left;
     background-size: 300% 100%;
     text-align: justify;
     list-style: none;
     margin: 1rem auto;
     transition: 0.3s;
+    color: #ffffff;
 }.sideBar ul li:hover {
     color: white;
     font-weight: 900;

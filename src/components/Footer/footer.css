@@ -1,11 +1,14 @@
+
+
 .footer__box a {
     text-decoration: none;
     font-style: none;
     text-decoration-color: none;
-    color: inherit;
+    color: rgb(241, 162, 27);
     /* margin: 0 auto; */
     display: flex;
     align-items: center;
+    
 }
 /* bubble */
 #bubble-wrapper {
@@ -15,13 +18,13 @@
     bottom: 0px;
     overflow: hidden;
     pointer-events: none;
-    z-index: -100;
+    z-index: -1;
 }
 .bubble {
     z-index: 0;
     height: max(600px, 30vw);
     width: max(300px, 30vw);
-    background-color: rgb(166, 184, 216);
+    background-color: rgb(40, 47, 59);
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -42,8 +45,8 @@
 /* footer > span hover */
 .footer span {
     position: absolute;
-    background-color: #000000;
-    transition: all 0.3s ease-in-out;
+    background-color: #171717;
+    transition: all 0.4s ease-in-out;
 
 }
 .footer span:nth-child(1) {
@@ -93,9 +96,15 @@
     overflow: hidden;
     height: 25vh;
     width: 100vw;
+    background: linear-gradient(to left, #252326 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+    background-size: 300% 100%;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    z-index: 1;
 }
 .footer:hover {
-
+    background-position: left;
+    border: none;
 }
 
 .footer__box {
@@ -106,5 +115,16 @@
 }
 
 .footer__box h5 {
-    margin: 0 auto 1rem auto;
+    margin: 0  auto 1rem auto;
+    color: azure;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    font-size:24px;
+    }
+
+@media screen and (max-width: 768px) {
+.footer {
+    height: auto;
+    width: auto;
+    }
 }

@@ -1,6 +1,12 @@
 import * as AiIcons from 'react-icons/ai'
+
+
+
+/* css */
 import './footer.css'
 import '../../App.css'
+
+
 
 export default function footer() {
 
