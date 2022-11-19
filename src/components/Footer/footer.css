@@ -24,7 +24,7 @@
     z-index: 0;
     height: max(600px, 30vw);
     width: max(300px, 30vw);
-    background-color: rgb(40, 47, 59);
+    background-color: rgba(21, 19, 24, 0.335);
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -96,7 +96,7 @@
     overflow: hidden;
     height: 25vh;
     width: 100vw;
-    background: linear-gradient(to left, #252326 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+    background: linear-gradient(to left, #252326 15%, #2b4346 35%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
     background-size: 300% 100%;
     transition-duration: .5s;
     transition-delay: 0s;

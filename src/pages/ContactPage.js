@@ -8,7 +8,7 @@ import '../App.css'
 
 function ContactPage() {
   return (
-    <>
+    <div id='body'>
       <div className='containerForPages'>
 
         <NavBar />
@@ -29,7 +29,7 @@ function ContactPage() {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

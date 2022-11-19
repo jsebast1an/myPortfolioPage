@@ -8,7 +8,7 @@ import '../App.css'
 
 function HomePage() {
   return (
-    <>
+    <div id='body'>
       <div className='containerForPages'>
 
         <NavBar />
@@ -29,7 +29,7 @@ function HomePage() {
       </div>
       
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -1,3 +1,7 @@
+#body {
+    background-color: #252326;
+  }
+  
 .sideBar ul a {
     text-decoration: none;
     font-style: none;
@@ -21,7 +25,7 @@
     top: 0;
     overflow: hidden;
     /* left: -100%; */
-    background: linear-gradient(to left, #252326 34%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+    background: linear-gradient(to left, #252326 15%, #2b4346 35%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
     background-size: 300% 100%;
     transition-duration: .5s;
     transition-delay: 0s;
@@ -130,7 +134,7 @@
 }
 .sideBar img:hover {
     box-shadow:1px 1px 5px 4px #bfb9b9; 
-    transform: scale(1.05, 1.05);
+    transform: scale(1.1, 1.1);
 }
 .sideBar h5 {
     margin-top: 2rem;

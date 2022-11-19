@@ -8,7 +8,7 @@ import '../../App.css'
 function NavBar() {
   return (
 
-    <>
+    <div id='body'>
         {/* <div className='navBar'>
             <FaIcons.FaBars className='nav-bars' />º
         </div> */}
@@ -21,7 +21,6 @@ function NavBar() {
 
             <div className='picContainer'>
                 <img src={profilePic} width={150} height={150} alt='me'></img>
-                <h5>Juan Sebastían López</h5>
             </div>
 
             <div className='menuContainer'>
@@ -44,7 +43,7 @@ function NavBar() {
                 </ul>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

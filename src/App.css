@@ -2,7 +2,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-html {
+#body {
   background-color: #252326;
 }
 
@@ -31,7 +31,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 75vw;
-  background: linear-gradient(to left, #252326 34%,#2b4346, #414a4c 64%, #3b444b 79%, #252326 104%) right;
+  background: linear-gradient(to left, #252326 15%, #2b4346 35%,#2b4346, #414a4c 64%, #3b444b 79%, #252326 104%) right;
   background-size: 300% 100%;
   transition-duration: .5s;
   transition-delay: 0s;
