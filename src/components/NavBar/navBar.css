@@ -159,10 +159,8 @@
     color: #ffffff;
 }.sideBar ul li:hover {
     color: white;
-    font-weight: 900;
     transform: scale(1.03,1.03);
     box-shadow: 3px 3px 25px rgb(147, 147, 147);
-    background-color: rgb(255, 255, 255);
 }
 .sideBar ul li svg {
     margin: 0 5px;

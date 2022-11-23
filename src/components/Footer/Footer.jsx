@@ -41,7 +41,7 @@ export default function footer() {
         <a target="_blank" rel='noreferrer' href="https://www.fb.com">
             <AiIcons.AiOutlineGithub /> E-commerce Backend
         </a>
-        <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+        <a target="_blank" rel='noreferrer' href="https://www.fb.com" className='mb-2'> 
             <AiIcons.AiOutlineGithub /> Fake Chat
         </a>
       </div>
