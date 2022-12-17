@@ -9,9 +9,7 @@ function NavBar() {
   return (
 
     <div id='body'>
-        {/* <div className='navBar'>
-            <FaIcons.FaBars className='nav-bars' />º
-        </div> */}
+        
         <div className='sideBar'>
 
             <span></span>

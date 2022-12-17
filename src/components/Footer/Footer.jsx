@@ -10,7 +10,7 @@ import '../../App.css'
 
 export default function footer() {
 
-  const animateBubble = (x) => {
+  /* const animateBubble = (x) => {
     const wrapper = document.getElementById("bubble-wrapper");
     const bubble = document.createElement("div");
     bubble.className = "bubble";
@@ -19,7 +19,7 @@ export default function footer() {
     setTimeout(() => wrapper.removeChild(bubble), 1300);
   }
 
-  window.onmousemove = (e) => animateBubble(e.clientX)
+  window.onmousemove = (e) => animateBubble(e.clientX) */
 
 
   return (

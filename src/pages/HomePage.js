@@ -9,22 +9,22 @@ import '../App.css'
 function HomePage() {
   return (
     <div id='body'>
-      <div className='containerForPages'>
+      <NavBar />
+      
 
-        <NavBar />
+
         
-        <div className="mainContainer">
+      <div className="mainContainer">
 
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-          <h2>
-            HomePage
+        <h2>
+          HomePage
           </h2>
           
-        </div>
           
       </div>
       
