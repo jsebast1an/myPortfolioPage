@@ -10,11 +10,8 @@ function HomePage() {
   return (
     <div id='body'>
       <NavBar />
-      
 
-
-        
-      <div className="mainContainer">
+      <main className="mainContainer">
 
         <span></span>
         <span></span>
@@ -23,10 +20,9 @@ function HomePage() {
 
         <h2>
           HomePage
-          </h2>
+        </h2>
           
-          
-      </div>
+      </main>
       
       <Footer />
     </div>

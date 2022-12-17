@@ -12,17 +12,18 @@
     margin: 0 auto;
 }
 .sideBar .menuContainer {
-    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 0;
 }
 .sideBar {
-    background-color: white;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    top: 0;
     overflow: hidden;
-    /* left: -100%; */
     background: linear-gradient(to left, #252326 15%, #2b4346 35%, #414a4c 64%, #3b444b 79%, #252326 104%) right;
     background-size: 300% 100%;
     transition-duration: .5s;
@@ -83,19 +84,6 @@
 .active li {
     box-shadow: 1px 1px 12px #bfb9b9 !important;
 }
-/* .navBar {
-    background-color: #4621fd;
-    background-image: linear-gradient(19deg, #c64efe 0%, #330c5f 51%, #210030 100%);
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.nav-bars {
-    margin: 0 2rem;
-    font-size: 2rem;
-    background: none;
-} */
 
 .sideBar:hover {
     background-position: left;
@@ -116,24 +104,6 @@
     border-radius: 0px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
-.sideBar div {
-    margin: 1rem auto;
-    text-align:center
-}
-.sideBar div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sideBar img {
-    margin-top: 1.3rem;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-}
-.sideBar img:hover {
-    box-shadow:1px 1px 5px 4px #bfb9b9; 
-    transform: scale(1.1, 1.1);
-}
 .sideBar h5 {
     margin-top: 2rem;
     font-weight: 900;
@@ -148,7 +118,7 @@
     align-items: center;
     padding: 6px 35px;
     border-radius: 5px;
-    background: linear-gradient(to left, #2d3150 11%, #2f3454 22%, #2c314b 33%, #42284f 40%,rgb(97, 39, 39) 85% ) left;
+    background: linear-gradient(to left, #2d3150 11%, #2f3454 22%, #2c314b 33%, #1a111e 40%,rgb(35, 22, 22) 85% ) left;
     background-size: 300% 100%;
     text-align: justify;
     list-style: none;

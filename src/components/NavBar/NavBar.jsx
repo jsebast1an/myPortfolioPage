@@ -17,29 +17,25 @@ function NavBar() {
             <span></span>
             <span></span>
 
-            <div className='picContainer'>
-                <img src={profilePic} width={150} height={150} alt='me'></img>
-            </div>
 
-            <div className='menuContainer'>
-                <ul>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
-                        <li>
-                            <FaIcons.FaHome /> Home
-                        </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
-                        <li>
-                            <FaIcons.FaToolbox /> Portfolio
-                        </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/contact" end>
-                        <li>
-                            <FaIcons.FaPhoneSquareAlt /> Contact
-                        </li>
-                    </NavLink>
-                </ul>
-            </div>
+            <ul className='menuContainer'> 
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
+                    <li>
+                        <FaIcons.FaHome /> Home
+                    </li>
+                </NavLink>
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
+                    <li>
+                        <FaIcons.FaToolbox /> Portfolio
+                    </li>
+                </NavLink>
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/contact" end>
+                    <li>
+                        <FaIcons.FaPhoneSquareAlt /> Contact
+                    </li>
+                </NavLink>
+            </ul>
+
         </div>
     </div>
   )

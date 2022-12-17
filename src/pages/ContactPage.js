@@ -9,25 +9,21 @@ import '../App.css'
 function ContactPage() {
   return (
     <div id='body'>
-      <div className='containerForPages'>
+      <NavBar />
 
-        <NavBar />
-        
-        <div className="mainContainer">
+      <main className="mainContainer">
 
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-          <h2>
-            ContactPage
-          </h2>
+        <h2>
+          ContactPage
+        </h2>
           
-        </div>
-          
-      </div>
-
+      </main>
+      
       <Footer />
     </div>
   )

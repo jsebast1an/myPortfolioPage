@@ -8,26 +8,22 @@ import '../App.css'
 
 function PortfolioPage() {
   return (
-    <div id="body">
-      <div className='containerForPages'>
+    <div id='body'>
+      <NavBar />
 
-        <NavBar />
-        
-        <div className="mainContainer">
+      <main className="mainContainer">
 
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-          <h2>
-            PortfolioPage
-          </h2>
-
-        </div>
-
-      </div>
-
+        <h2>
+          PortfolioPage
+        </h2>
+           
+      </main>
+      
       <Footer />
     </div>
   )
