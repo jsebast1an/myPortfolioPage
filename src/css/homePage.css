@@ -1,0 +1,13 @@
+.description {
+    margin-top: 1rem;
+    max-width: 360px;
+    color: aliceblue;
+
+}
+.description h2 {
+    color: aliceblue;
+    text-align: center;
+}
+.description div {
+    text-align: justify;
+}
