@@ -1,3 +1,5 @@
+/* description */
+
 .description {
     position: relative;
     margin-top: 1rem;
@@ -10,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 .description::before {
     content: '';
@@ -17,8 +20,8 @@
     width: 500px;
     height: 500px;
     background-image: conic-gradient(transparent, transparent, transparent, rgb(174, 156, 202));
-    animation: animate 4s linear infinite;
-    animation-delay: -2s;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
 }
 .description::after {
     content: '';
@@ -26,7 +29,7 @@
     width: 500px;
     height: 500px;
     background-image: conic-gradient(transparent, transparent, transparent, rgb(110, 185, 185));
-    animation: animate 4s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
 .description .span {
@@ -52,6 +55,7 @@
 }
 
 /* end */
+
 .description h2 {
     color: aliceblue;
     text-align: center;
@@ -61,4 +65,68 @@
     padding: 5px 32px;
     text-align: justify;
     z-index: 2;
+}
+
+
+/* hovers */
+
+.description:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255)
+}
+
+/* end */
+
+/* brokenImgContainer */
+
+.brokenImgContainer {
+    position: relative;
+    margin-top: 1rem;
+    width: 360px;
+    height: 360px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+/* end */
+
+/* span for broken img container */
+.brokenImgContainer .span {
+    position: absolute;
+    border-radius: 10px;
+    inset: 0;
+    transition: 0.5s;
+    background: url(../imgs/perfil.jpg);
+    background-size: cover;
+}
+
+.brokenImgContainer .span:nth-child(1) {
+    clip-path: polygon(0 0, 50% 0, 50% 49%, 0 50%);
+    background-color: red;
+}
+.brokenImgContainer .span:nth-child(2) {
+    clip-path: polygon(100% 0, 50% 0, 50% 49%, 100% 50%);
+    background-color: rgb(0, 135, 63);
+}
+.brokenImgContainer .span:nth-child(3) {
+    clip-path: polygon(100% 100%, 50% 100%, 50% 49%, 100% 50%);
+    background-color: rgb(255, 242, 0);
+}
+.brokenImgContainer .span:nth-child(4) {
+    clip-path: polygon(0 100%, 50% 100%, 50% 49%, 0 50%);
+    background-color: rgb(98, 0, 255);
+}
+
+/* hover for span bronken img container */
+
+.brokenImgContainer:hover .span:nth-child(1) {
+    transform: translate(-40px, -60px) rotate(-15deg);
+}
+.brokenImgContainer:hover .span:nth-child(2) {
+    transform: translate(40px, -100px) rotate(25deg);
+}
+.brokenImgContainer:hover .span:nth-child(3) {
+    transform: translate(40px, 80px) rotate(-5deg);
+}
+.brokenImgContainer:hover .span:nth-child(4) {
+    transform: translate(-40px, 60px) rotate(15deg);
 }

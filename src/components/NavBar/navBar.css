@@ -94,7 +94,6 @@
     transform: scale(1.05, 1.05);
 }
 .sideBar:hover ul li {
-    transform: scale(1.05, 1.05);
     box-shadow: 1px 1px 10px rgb(0, 0, 0);
     background-position: right;
     color: rgb(217, 217, 217);

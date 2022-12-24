@@ -24,10 +24,10 @@ export default function footer() {
 
   return (
     <div className='footer flexRowWrapContainer'>
+      {/* <span></span>
       <span></span>
       <span></span>
-      <span></span>
-      <span></span>
+      <span></span> */}
 
       <div className='footer__box'>
         <h5>Pages</h5>

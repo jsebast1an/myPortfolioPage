@@ -1,6 +1,5 @@
 import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
-
 /* css */
 import '../App.css'
 import '../css/homePage.css'
@@ -14,10 +13,11 @@ function HomePage() {
 
       <main className="mainContainer">
 
+        {/* <span></span>
         <span></span>
         <span></span>
-        <span></span>
-        <span></span>
+        <span></span> */}
+        
 
         <div className='flexRowWrapContainer'>
           
@@ -38,8 +38,12 @@ function HomePage() {
             </div>
           </div>
 
-          <div className='flexCenterContainer'>
-            
+          <div className='flexCenterContainer brokenImgContainer'>
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>
+            <h2>Juan López</h2>            
           </div>
 
         </div>
