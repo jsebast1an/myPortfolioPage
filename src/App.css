@@ -39,6 +39,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 
 /* general span container */

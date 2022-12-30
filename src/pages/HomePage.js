@@ -21,6 +21,15 @@ function HomePage() {
 
         <div className='flexRowWrapContainer'>
           
+          
+          <div className='flexCenterContainer brokenImgContainer'>
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>
+            <h2>Juan Sebastián López</h2>            
+          </div>
+
           <div className='flexCenterContainer description'>
             <tag className='span'></tag>
             <div className='text'>
@@ -36,14 +45,6 @@ function HomePage() {
             challenging position where I can
             continue to learn.
             </div>
-          </div>
-
-          <div className='flexCenterContainer brokenImgContainer'>
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>
-            <h2>Juan López</h2>            
           </div>
 
         </div>
