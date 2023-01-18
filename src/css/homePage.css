@@ -1,3 +1,55 @@
+/* mid_circle */
+.mid_circle 
+{
+    position: absolute;
+    clip-path: ellipse(71% 73% at 85% 52%);
+    background-image: url(../imgs/bigCircle.jpg);
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+
+/* main saludo */
+
+.main_saludo div h4 {
+    margin: 1rem 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+.main_saludo div h5 {
+    margin: 0 0 1rem 0;
+    font-size: 34px;
+}
+
+.main_saludo button.about_me {
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: solid 1.7px grey;
+    margin: 1rem 0;
+    background: linear-gradient(to left, #fae293 15%, #f0a58d 55%, #080201 64%,#080201 64%, #160202 79%) right;
+    background-size: 300% 100%;
+    transition: 0.2s ease-in;
+    vertical-align: center;
+    font-weight: 600;
+}
+.main_saludo button.about_me:hover {
+    background-position: left;
+    color: white;
+    font-weight: 800;
+    border: 1.6px solid rgb(66, 66, 66);
+}
+.main_saludo svg  
+{
+    margin-bottom: -2px;
+    margin-left:6px ;
+}
+
+
+/* end */
+
 /* description */
 
 .description {
@@ -56,11 +108,6 @@
 
 /* end */
 
-.description h2 {
-    color: aliceblue;
-    text-align: center;
-    z-index: 2;
-}
 .description .text {
     padding: 5px 32px;
     text-align: justify;
@@ -80,12 +127,11 @@
 
 .brokenImgContainer {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 360px;
     height: 360px;
     background-color: transparent;
-    border-radius: 10px;
-    color: aliceblue;
+    color: rgb(10, 19, 28);
 }
 
 /* end */
@@ -93,7 +139,6 @@
 /* span for broken img container */
 .brokenImgContainer .span {
     position: absolute;
-    border-radius: 10px;
     inset: 0;
     transition: 0.5s ease-out;
     background: url(../imgs/perfil.jpg);

@@ -1,9 +1,17 @@
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  font-style: none;
+  text-decoration-color: none;
+  color: inherit;
+}
+
+/*  */ /*  */
 
 #body {
   background-color: #252326;
@@ -15,13 +23,7 @@
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  font-style: none;
-  text-decoration-color: none;
-  color: inherit;
-}
-
+/* containers */
 .flexRowWrapContainer {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +37,21 @@ a {
   align-content: center;
   align-items: center;
 }
+/* end */
+
+/* mainContainer */
+
+.mainContainer
+{
+  position: relative;
+  background-image: url(./imgs/bg.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* end */
+
 
 @media (max-width: 800px) { 
  /* .containerForPages {

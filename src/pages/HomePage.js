@@ -1,5 +1,5 @@
 import NavBar from '../components/NavBar/NavBar'
-import Footer from '../components/Footer/Footer'
+import * as FaIcons from 'react-icons/fa'
 /* css */
 import '../App.css'
 import '../css/homePage.css'
@@ -12,20 +12,20 @@ function HomePage() {
       <NavBar />
 
       <main className="mainContainer">      
-
+        <span className='mid_circle'></span>
+        
         <div className='flexRowWrapContainer'>
-          
-          
-          <div className='flexCenterContainer brokenImgContainer'>
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>
-            <h2>Juan Sebastián López</h2>            
-          </div>
 
-          <div className='flexCenterContainer'>
-            <button className='btn btn-warning'>About me</button>
+          <div className='flexCenterContainer main_saludo'>
+            <div>
+              <h4>
+                Hey there!
+              </h4>
+              <h5>
+                Welcome to my page. 
+              </h5>
+            </div>
+            <button className='about_me'>About me <FaIcons.FaArrowCircleRight /></button>
           </div>
 
           <div className='flexCenterContainer description' style={{display:'none'}}>
@@ -43,6 +43,14 @@ function HomePage() {
             challenging position where I can
             continue to learn.
             </div>
+          </div>
+
+          <div className='flexCenterContainer brokenImgContainer'>
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>            
+            <tag className='span'></tag>
+            <h2>Juan Sebastián López</h2>            
           </div>
 
         </div>
