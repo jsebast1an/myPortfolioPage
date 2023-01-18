@@ -12,11 +12,9 @@ function NavBar() {
         
         <div className='sideBar'>
 
-            {/* <span></span>
-            <span></span>
-            <span></span>
-            <span></span> */}
-
+            <div className='logoContainer'>
+                Juan López
+            </div>
 
             <ul className='menuContainer'> 
                 <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
@@ -26,7 +24,7 @@ function NavBar() {
                 </NavLink>
                 <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
                     <li>
-                        {/* <FaIcons.FaToolbox />  */}Portfolio
+                        {/* <FaIcons.FaToolbox /> */} Portfolio
                     </li>
                 </NavLink>
                 <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/contact" end>

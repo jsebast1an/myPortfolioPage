@@ -11,13 +11,7 @@ function HomePage() {
     <div id='body'>
       <NavBar />
 
-      <main className="mainContainer">
-
-        {/* <span></span>
-        <span></span>
-        <span></span>
-        <span></span> */}
-        
+      <main className="mainContainer">      
 
         <div className='flexRowWrapContainer'>
           
@@ -30,7 +24,11 @@ function HomePage() {
             <h2>Juan Sebastián López</h2>            
           </div>
 
-          <div className='flexCenterContainer description'>
+          <div className='flexCenterContainer'>
+            <button className='btn btn-warning'>About me</button>
+          </div>
+
+          <div className='flexCenterContainer description' style={{display:'none'}}>
             <tag className='span'></tag>
             <div className='text'>
             I am a developer who likes to create,
@@ -51,7 +49,6 @@ function HomePage() {
           
       </main>
       
-      <Footer />
     </div>
   )
 }

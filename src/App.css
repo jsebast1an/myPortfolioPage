@@ -8,7 +8,7 @@
 #body {
   background-color: #252326;
   display: grid;
-  grid-template-rows: 65px 1fr 150px;
+  grid-template-rows: 65px 1fr;
   grid-template-columns: 100%;
   /* grid-template-areas: "navbar" "main" "footer"; */
   height: 100vh;
@@ -21,12 +21,6 @@ a {
   text-decoration-color: none;
   color: inherit;
 }
-
-/* .containerForPages {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
 
 .flexRowWrapContainer {
   display: flex;
@@ -41,65 +35,6 @@ a {
   align-content: center;
   align-items: center;
 }
-
-/* general span container */
-.mainContainer {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to left, #252326 15%, #2b4346 35%,#2b4346, #414a4c 64%, #3b444b 79%, #252326 104%) right;
-  background-size: 300% 100%;
-  transition-duration: .5s;
-  transition-delay: 0s;
-}
-.mainContainer:hover {
-  background-position: left;
-}
-.mainContainer span {
-  position: absolute;
-  background-color: #171717 ;
-  transition: all 0.4s ease-in-out;
-}
-.mainContainer span:nth-child(1) {
-  width: 100%;
-  height: 4px;
-  top: 0;
-  left:-100%;
-}
-.mainContainer span:nth-child(2) {
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  right:-100%;
-}
-.mainContainer span:nth-child(3) {
-  width: 4px;
-  height: 100%;
-  bottom: -100%;
-  left:0;
-}
-.mainContainer span:nth-child(4) {
-  width: 4px;
-  height: 100%;
-  top: -100%;
-  right:0;
-}
-.mainContainer:hover span:nth-child(1) {
-  left:0;
-  transform:scale(1.05,1.05)
-}
-.mainContainer:hover span:nth-child(2) {
-  right:0;
-  transform:scale(1.05,1.05)
-}
-.mainContainer:hover span:nth-child(3) {
-  bottom: 0;    
-  transform:scale(1.05,1.05)
-}
-.mainContainer:hover span:nth-child(4) {
-  top:0;
-  transform:scale(1.05,1.05)
-}
-/*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 @media (max-width: 800px) { 
  /* .containerForPages {
