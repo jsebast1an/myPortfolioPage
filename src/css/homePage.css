@@ -21,6 +21,10 @@
     margin: 0 0 1rem 0;
     font-size: 34px;
 }
+.main_saludo div h4 strong
+{
+    color: #ffc400;
+}
 
 .main_saludo button.about_me {
     display: flex;
@@ -127,9 +131,9 @@
 
 .brokenImgContainer {
     position: relative;
-    margin-top: 3rem;
-    width: 360px;
-    height: 360px;
+    margin-top: 4rem;
+    width: 390px;
+    height: 390px;
     background-color: transparent;
     color: rgb(10, 19, 28);
 }
@@ -143,6 +147,7 @@
     transition: 0.5s ease-out;
     background: url(../imgs/perfil.jpg);
     background-size: cover;
+    border-radius: 50%;
 }
 
 .brokenImgContainer .span:nth-child(1) {

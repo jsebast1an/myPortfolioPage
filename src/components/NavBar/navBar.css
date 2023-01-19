@@ -35,9 +35,9 @@
 .sideBar .menuContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 700px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    /* width: inherit; */
     margin: 0;
 }
 

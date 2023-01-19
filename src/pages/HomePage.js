@@ -3,10 +3,27 @@ import * as FaIcons from 'react-icons/fa'
 /* css */
 import '../App.css'
 import '../css/homePage.css'
+import { NavLink } from 'react-router-dom'
 
 
 
 function HomePage() {
+
+  function viewDescription(evt) {
+    
+    evt.preventDefault()
+    evt.stopPropagation()
+
+    let main_saludo = document.querySelector('.main_saludo')
+    let description = document.querySelector('.description')
+
+    description.style.display = 'block'
+    main_saludo.style.display = 'none'
+
+    
+  }
+
+
   return (
     <div id='body'>
       <NavBar />
@@ -19,19 +36,28 @@ function HomePage() {
           <div className='flexCenterContainer main_saludo'>
             <div>
               <h4>
-                Hey there!
+                Hi there!
+              </h4>
+              <h4>
+                I'm <strong>Juan López</strong>
               </h4>
               <h5>
                 Welcome to my page. 
               </h5>
             </div>
-            <button className='about_me'>About me <FaIcons.FaArrowCircleRight /></button>
+
+            <NavLink to={'/about_me'} end style={{textDecoration:'none'}}>
+              <button className='about_me'>
+                About me <FaIcons.FaArrowCircleRight />
+              </button>
+            </NavLink>
           </div>
 
           <div className='flexCenterContainer description' style={{display:'none'}}>
             <tag className='span'></tag>
             <div className='text'>
-            I am a developer who likes to create,
+            I am a developer based on Buenos Aires, Argentina but born in Ecuador.
+            I likes to create,
             learn and who in the future wants to
             start his own start-up.
             I emphasize being hardworking, gentle

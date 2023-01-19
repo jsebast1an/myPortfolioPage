@@ -19,7 +19,17 @@ function NavBar() {
             <ul className='menuContainer'> 
                 <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
                     <li>
-                        {/* <FaIcons.FaHome /> */} Home
+                        <FaIcons.FaHome /> Home
+                    </li>
+                </NavLink>
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/skills" end>
+                    <li>
+                         About me
+                    </li>
+                </NavLink>
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/skills" end>
+                    <li>
+                        Skills
                     </li>
                 </NavLink>
                 <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
