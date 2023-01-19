@@ -22,7 +22,7 @@ function NavBar() {
                         <FaIcons.FaHome /> Home
                     </li>
                 </NavLink>
-                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/skills" end>
+                <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/about_me" end>
                     <li>
                          About me
                     </li>
