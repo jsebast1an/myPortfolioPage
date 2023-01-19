@@ -1,0 +1,108 @@
+/* title about me */
+.h2Title .flexRowWrapContainer span
+{
+    margin: 0 10px;
+}
+.h2Title .flexRowWrapContainer strong
+{
+    color: orange;
+}
+
+
+/* end */
+
+/* description */
+
+.description {
+    position: relative;
+    margin-top: 3rem;
+    max-width: 360px;
+    height: 360px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.description::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(238, 201, 131));
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.description::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(252, 195, 90));
+    animation: animate 6s linear infinite;
+}
+
+.description .span {
+    display: inline-block;
+    position: absolute;
+    inset: 5px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    z-index: 1;
+}
+/* animation for description */
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }   
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* end */
+
+.description .text {
+    padding: 5px 32px;
+    text-align: justify;
+    z-index: 2;
+    color: black;
+}
+.description .btnResume
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: solid 1.7px grey;
+    margin: 1rem 0;
+    background-color: rgb(44, 44, 240);
+    transition: 0.2s ease;
+    font-weight: 600;
+    z-index: 2;
+}
+.description .btnResume:hover {
+    box-shadow: 1px 1px 10px rgb(30, 30, 30);
+    background-color: rgb(135, 135, 244);
+
+}
+.description .btnResume svg  
+{
+    margin-bottom: -2px;
+    margin-left:6px ;
+}
+
+/* description hovers */
+
+.description:hover {
+    box-shadow: 1px 1px 8px rgb(40, 40, 40)
+}
+
+/* end */

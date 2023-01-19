@@ -39,6 +39,28 @@ a {
 }
 /* end */
 
+/* titles */
+
+.h2Title
+{
+  margin: 1rem auto;
+  font-weight: 600;
+}
+
+
+/* end */
+
+/* mid_circle */
+.mid_circle 
+{
+    position: absolute;
+    clip-path: ellipse(71% 73% at 85% 52%);
+    background-image: url(./imgs/bigCircle.jpg);
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
 /* mainContainer */
 
 .mainContainer
@@ -59,10 +81,10 @@ a {
   
  }  */
 
- .sideBar {
-  width: auto;
-  height: auto; 
- }
+  .sideBar {
+    width: auto;
+    height: auto; 
+  }
 
   .mainContainer{
     width: auto;

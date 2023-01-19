@@ -54,24 +54,6 @@ function HomePage() {
             </NavLink>
           </div>
 
-          <div className='flexCenterContainer description' style={{display:'none'}}>
-            <tag className='span'></tag>
-            <div className='text'>
-            I am a developer based on Buenos Aires, Argentina but born in Ecuador.
-            I likes to create,
-            learn and who in the future wants to
-            start his own start-up.
-            I emphasize being hardworking, gentle
-            and creative to give quick and efficient
-            solutions. I have always had good
-            interpersonal relationships, I like to get
-            together with people who want to take
-            on the world. I am looking for a
-            challenging position where I can
-            continue to learn.
-            </div>
-          </div>
-
           <div className='flexCenterContainer brokenImgContainer'>
             <tag className='span'></tag>            
             <tag className='span'></tag>            
@@ -83,7 +65,7 @@ function HomePage() {
         </div>
           
       </main>
-        
+
       <Footer />
       
     </div>
