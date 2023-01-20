@@ -20,7 +20,7 @@ a {
   grid-template-columns: 100%;
   /* grid-template-areas: "navbar" "main" "footer"; */
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* containers */
@@ -56,6 +56,8 @@ a {
     position: absolute;
     clip-path: ellipse(71% 73% at 85% 52%);
     background-image: url(./imgs/bigCircle.jpg);
+    background-position: center;
+    background-size: cover;
     width: 50%;
     height: 100%;
     right: 0;

@@ -2,8 +2,8 @@ import Footer from '../components/Footer/Footer'
 import NavBar from '../components/NavBar/NavBar'
 import * as FaIcons from 'react-icons/fa'
 /* css */
-import '../App.css'
 import '../css/aboutPage.css'
+import '../App.css'
 
 
 function AboutPage() {

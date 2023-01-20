@@ -2,9 +2,9 @@ import NavBar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
 import * as FaIcons from 'react-icons/fa'
 /* css */
-import '../App.css'
 import '../css/homePage.css'
 import { NavLink } from 'react-router-dom'
+import '../App.css'
 
 
 
