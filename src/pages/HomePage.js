@@ -10,21 +10,6 @@ import '../App.css'
 
 function HomePage() {
 
-  function viewDescription(evt) {
-    
-    evt.preventDefault()
-    evt.stopPropagation()
-
-    let main_saludo = document.querySelector('.main_saludo')
-    let description = document.querySelector('.description')
-
-    description.style.display = 'block'
-    main_saludo.style.display = 'none'
-
-    
-  }
-
-
   return (
     <div id='body'>
       <NavBar />
@@ -52,6 +37,25 @@ function HomePage() {
                 About me <FaIcons.FaArrowCircleRight />
               </button>
             </NavLink>
+
+            <div className='flexRowWrapContainer social_icons'>
+              <div class="box">
+                  
+                  <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                      <FaIcons.FaFacebook />
+                  </a>
+              </div>
+              <div class="box">
+                  <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                      <FaIcons.FaGithub />
+                  </a>
+              </div>
+              <div class="box">
+                  <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                      <FaIcons.FaLinkedin />
+                  </a>
+              </div>
+            </div>
           </div>
 
           <div className='flexCenterContainer brokenImgContainer'>
@@ -63,6 +67,7 @@ function HomePage() {
           </div>
 
         </div>
+
           
       </main>
 

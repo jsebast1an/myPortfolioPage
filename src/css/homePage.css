@@ -33,12 +33,53 @@
     font-weight: 800;
     border: 1.6px solid rgb(66, 66, 66);
 }
-.main_saludo svg  
+.main_saludo button svg  
 {
     margin-bottom: -2px;
     margin-left:6px ;
 }
 
+
+/* end */
+
+/* social icons */
+
+.social_icons .box {
+    margin: 10px 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.social_icons .box svg {
+    width: 40px;
+    height: 40px;
+}
+.social_icons .box a {
+    color: inherit;
+}
+.social_icons .box:nth-child(1) {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 34%, rgba(48,81,150,1) 66%) right;
+    background-size: 300% 100%;
+}
+.social_icons .box:nth-child(2) {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 34%, #fd5949 64%, #d6249f 79%, #285AEB 104%) right;
+    background-size: 300% 100%;
+}
+.social_icons .box:nth-child(3) {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 34%, #0A66C2 66%) right;
+    background-size: 300% 100%;
+}
+.social_icons .box:hover {
+    box-shadow: 3px 3px 10px rgb(81, 81, 81);
+    background-position: left;
+    transform: scale(1.05, 1.05);
+    color: white;
+    border-radius: 10px;
+}
 
 /* end */
 
