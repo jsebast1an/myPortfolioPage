@@ -1,0 +1,78 @@
+/* project Container */
+
+.projectsContainer
+{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* end */
+
+/* project box */
+
+.projectsContainer .projectBox
+{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.projectBox img
+{
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+
+}
+.projectBox .projectBox_info
+{
+    height: 60px; /* era 160px */
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(27, 27, 27, .5);
+    color: white;
+    bottom: 105px;
+    transition: all 0.3s ease-in;
+}
+.projectBox_info h4 
+{
+    margin:10px;
+}
+.projectBox_info p 
+{
+    margin:10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.projectBox_info p span
+{
+    font-weight: bold;
+}
+
+/* hovers */
+.projectsContainer .projectBox:hover
+{
+    cursor: pointer;
+}
+.projectsContainer .projectBox:hover img
+{
+    transform: scale(1.05) rotate(-2deg);
+}
+.projectsContainer .projectBox:hover .projectBox_info
+{
+    height: 160px;
+    bottom: 105px;
+    background-color: rgb(27, 27, 27, .9);
+
+}
+.projectsContainer .projectBox:hover .projectBox_info p
+{
+    visibility: visible;
+    opacity: 1;
+}
+/* end */
