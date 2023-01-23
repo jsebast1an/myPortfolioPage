@@ -106,3 +106,35 @@
 }
 
 /* end */
+
+/* img container */
+
+.imgContainer
+{
+    z-index: 1;
+}
+.imgContainer button 
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: solid 1.7px grey;
+    margin: 1rem 0;
+    background: linear-gradient(to left, #fae293 15%, #f0a58d 55%, #080201 64%,#080201 64%, #160202 79%) right;
+    background-size: 300% 100%;
+    transition: 0.2s ease-in;
+    vertical-align: center;
+    font-weight: 600;
+}
+.imgContainer button:hover {
+    background-position: left;
+    color: white;
+    font-weight: 800;
+    border: 1.6px solid rgb(66, 66, 66);
+}
+.imgContainer button svg  
+{
+    margin-bottom: -2px;
+    margin-left:6px ;
+}

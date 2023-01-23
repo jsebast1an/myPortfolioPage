@@ -1,0 +1,29 @@
+/* contact container */
+
+.contactContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* end */
+
+/* contact intro */
+.contact_intro
+{
+    margin-top: 5rem;
+}
+
+.contact_intro h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.contact_intro h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact_intro h4 strong{
+    color: orange;
+}
+
+/* end */

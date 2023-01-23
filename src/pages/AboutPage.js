@@ -1,6 +1,7 @@
 import Footer from '../components/Footer/Footer'
 import NavBar from '../components/NavBar/NavBar'
 import * as FaIcons from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 /* css */
 import '../css/aboutPage.css'
 import '../App.css'
@@ -38,8 +39,12 @@ function AboutPage() {
                         </button>
                     </div>
 
-                    <div className='imgContainer'>
-
+                    <div className='imgContainer flexCenterContainer'>
+                        <NavLink to={'/skills'} end style={{textDecoration:'none'}}>
+                            <button className=''>
+                                Skills <FaIcons.FaArrowCircleRight />
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
             </main>        
