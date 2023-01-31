@@ -1,0 +1,14 @@
+/* dark mode */
+.btnMode
+{
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: 3;
+}
+body.dark-mode:not(img)
+{
+  filter: invert(100%);
+}
+
+/* end */

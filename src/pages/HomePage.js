@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 /* css */
 import '../css/homePage.css'
 import '../App.css'
+import ModeBtn from '../components/modeBtn/ModeBtn'
 
 
 
@@ -15,6 +16,7 @@ function HomePage() {
       <NavBar />
 
       <main className="mainContainer">      
+        <ModeBtn />
         <span className='mid_circle'></span>
         
         <div className='flexRowWrapContainer'>
@@ -39,18 +41,18 @@ function HomePage() {
             </NavLink>
 
             <div className='flexRowWrapContainer social_icons'>
-              <div class="box">
+              <div className="box">
                   
                   <a target="_blank" rel='noreferrer' href="https://www.fb.com">
                       <FaIcons.FaFacebook />
                   </a>
               </div>
-              <div class="box">
+              <div className="box">
                   <a target="_blank" rel='noreferrer' href="https://www.fb.com">
                       <FaIcons.FaGithub />
                   </a>
               </div>
-              <div class="box">
+              <div className="box">
                   <a target="_blank" rel='noreferrer' href="https://www.fb.com">
                       <FaIcons.FaLinkedin />
                   </a>
@@ -59,10 +61,10 @@ function HomePage() {
           </div>
 
           <div className='flexCenterContainer brokenImgContainer'>
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>            
-            <tag className='span'></tag>
+            <div className='span'></div>            
+            <div className='span'></div>            
+            <div className='span'></div>            
+            <div className='span'></div>
             <h2>Juan Sebastián López</h2>            
           </div>
 

@@ -39,7 +39,7 @@ function AboutPage() {
                         </button>
                     </div>
 
-                    <div className='imgContainer flexCenterContainer'>
+                    <div className='imgContainer flexCenterContainergf'>
                         <NavLink to={'/skills'} end style={{textDecoration:'none'}}>
                             <button className=''>
                                 Skills <FaIcons.FaArrowCircleRight />
