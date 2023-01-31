@@ -94,6 +94,10 @@
     color: rgb(10, 19, 28);
 }
 
+.brokenImgContainer h2 
+{
+    color: #ffc400;
+}
 /* end */
 
 /* span for broken img container */

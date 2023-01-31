@@ -15,12 +15,16 @@ export default function ModeBtn() {
     
 
     return (
-        <div>
-            <a className='btn btn-dark btnMode' onClick={toggleTheme} >
+        <>
+            {/* <a className='btn btn-dark btnMode' onClick={toggleTheme} >
                 {
                     theme === 'dark-mode' ? 'Dark mode' : 'Light mode'
                 }
-            </a>
-        </div>
+            </a> */}
+            <label class="switch btnMode">
+                <input type="checkbox" onClick={toggleTheme}/>
+                <span class="slider"></span>
+            </label>
+        </>
     )
 }

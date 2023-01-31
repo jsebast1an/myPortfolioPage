@@ -15,6 +15,7 @@ import NotFoundPage from "./pages/NotFoundPage"
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import ModeBtn from "./components/modeBtn/ModeBtn";
 
 
 
@@ -22,6 +23,8 @@ import './App.css'
 function App() {
     return (
       <BrowserRouter>
+        
+        <ModeBtn />
 
         <Routes>
           <Route exact path="/" element={ <HomePage /> } />

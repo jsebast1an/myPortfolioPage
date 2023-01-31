@@ -45,7 +45,7 @@
     animation: animate 6s linear infinite;
 }
 
-.description .span {
+.description .spann {
     display: inline-block;
     position: absolute;
     inset: 5px;

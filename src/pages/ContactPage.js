@@ -5,6 +5,7 @@ import * as FaIcons from 'react-icons/fa'
 import '../css/contactPage.css'
 import '../App.css'
 import ContactForm from '../components/ContactForm/ContactForm'
+import ModeBtn from '../components/modeBtn/ModeBtn'
 
 function ContactPage() {
     return (
@@ -13,11 +14,6 @@ function ContactPage() {
             <NavBar />
 
             <main className='mainContainer'>
-                {/* <h2 className='flexCenterContainer h2Title'>
-                    <div className='flexRowWrapContainer'>
-                        <FaIcons.FaPhone /> <span>Contact</span> <strong>Me</strong>
-                    </div>
-                </h2> */}
 
                 <div className='contactContainer'>
 

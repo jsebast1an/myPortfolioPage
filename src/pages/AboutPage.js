@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 /* css */
 import '../css/aboutPage.css'
 import '../App.css'
+import ModeBtn from '../components/modeBtn/ModeBtn'
 
 
 function AboutPage() {
@@ -21,7 +22,7 @@ function AboutPage() {
                 </h2>
                 <div className='flexRowWrapContainer'>
                     <div className='flexCenterContainer description'>
-                        <tag className='span'></tag>
+                        <div className='spann'></div>
                         <div className='text'>
                             I am a developer based on Buenos Aires, Argentina but born in Ecuador.
                             I am very passionate about improving 

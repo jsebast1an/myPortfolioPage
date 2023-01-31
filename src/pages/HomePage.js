@@ -16,7 +16,6 @@ function HomePage() {
       <NavBar />
 
       <main className="mainContainer">      
-        <ModeBtn />
         <span className='mid_circle'></span>
         
         <div className='flexRowWrapContainer'>
@@ -65,7 +64,7 @@ function HomePage() {
             <div className='span'></div>            
             <div className='span'></div>            
             <div className='span'></div>
-            <h2>Juan Sebastián López</h2>            
+            <h2>Thanks for coming!</h2>            
           </div>
 
         </div>
