@@ -5,7 +5,6 @@ import * as FaIcons from 'react-icons/fa'
 import '../css/contactPage.css'
 import '../App.css'
 import ContactForm from '../components/ContactForm/ContactForm'
-import ModeBtn from '../components/modeBtn/ModeBtn'
 
 function ContactPage() {
     return (

@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom'
 /* css */
 import '../css/homePage.css'
 import '../App.css'
-import ModeBtn from '../components/modeBtn/ModeBtn'
 
 
 

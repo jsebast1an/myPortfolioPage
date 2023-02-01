@@ -21,9 +21,9 @@ export default function ModeBtn() {
                     theme === 'dark-mode' ? 'Dark mode' : 'Light mode'
                 }
             </a> */}
-            <label class="switch btnMode">
+            <label className="switch btnMode">
                 <input type="checkbox" onClick={toggleTheme}/>
-                <span class="slider"></span>
+                <span className="slider"></span>
             </label>
         </>
     )

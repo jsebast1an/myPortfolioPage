@@ -15,6 +15,10 @@ body.dark-mode .mid_circle
 {
   filter: invert(80%);
 }
+body.dark-mode .card-avatar
+{
+  filter:invert(100%);
+}
 
 /* end */
 
