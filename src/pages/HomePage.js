@@ -6,8 +6,6 @@ import { NavLink } from 'react-router-dom'
 import '../css/homePage.css'
 import '../App.css'
 
-
-
 function HomePage() {
 
   return (

@@ -13,6 +13,7 @@
 
 .projectsContainer .projectBox
 {
+    position: relative;
     height: 300px;
     width: 300px;
     margin: 50px;
@@ -26,16 +27,14 @@
     transition: all 0.3s ease-in;
 
 }
-.projectBox .projectBox_info
-{
-    height: 60px; /* era 160px */
+.projectBox .projectBox_info {
+    position: absolute;
+    height: 60px;
+    bottom: 0;
     width: 300px;
     padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
     background-color: rgb(27, 27, 27, .5);
     color: white;
-    bottom: 105px;
     transition: all 0.3s ease-in;
 }
 .projectBox_info h4 
@@ -53,6 +52,9 @@
 {
     font-weight: bold;
 }
+.projectBox_buttons.d-flex {
+    justify-content: space-around;
+}
 
 /* hovers */
 .projectsContainer .projectBox:hover
@@ -66,7 +68,6 @@
 .projectsContainer .projectBox:hover .projectBox_info
 {
     height: 160px;
-    bottom: 105px;
     background-color: rgb(27, 27, 27, .9);
 
 }
@@ -76,3 +77,21 @@
     opacity: 1;
 }
 /* end */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:820px){
+    
+    .projectsContainer 
+    {
+        display: flex;
+        justify-content: center;
+        padding: 0rem;
+        flex-wrap: wrap;
+    }
+
+    .projectsContainer .projectBox {
+        margin: 30px 10px;
+    }
+}

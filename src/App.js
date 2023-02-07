@@ -15,7 +15,7 @@ import NotFoundPage from "./pages/NotFoundPage"
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import ModeBtn from "./components/modeBtn/ModeBtn";
+import ModeBtn from "./components/modeBtn/ModeBtn"
 
 
 
