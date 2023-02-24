@@ -6,17 +6,23 @@ import '../css/contactPage.css'
 import '../App.css'
 import ContactForm from '../components/ContactForm/ContactForm'
 import { useEffect, useState } from 'react'
-import { collection, getDocs, doc, getDoc } from "firebase/firestore";
+import { collection, getDocs, doc, getDoc, addDoc } from "firebase/firestore";
 import { dbFirestore } from '../firebase'
 
 
 function ContactPage() {
+    const messageId = 'GfPQs3oWYmLJDB6FNAei'
+    const [loading, setLoading] = useState(false)
+    /* const [item, setItem] = useState({}) */
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
 
-    const [messageId, setMessageId] = useState('GfPQs3oWYmLJDB6FNAei')
-    const [item, setItem] = useState()
+    //iniciar firebase
+    const db = dbFirestore;
 
     useEffect(() => {
-        const db = dbFirestore;
+        /* 
         //para buscar por collection 
         const collectionRef = collection(db, "messages");
         getDocs(collectionRef)
@@ -28,70 +34,103 @@ function ContactPage() {
         })
         .catch((error) => {
             console.log("Error al obtener la colección:", error);
-        })
+        }) */
 
         //para buscar por item se aumenta un parametro, que seria el id 
-        const docRef = doc(db, "messages", messageId);
+        /* const docRef = doc(db, "messages", messageId);
         getDoc(docRef)
         .then( (doc) => {
             if (doc.exists()) {
                 setItem({id: doc.id, ...doc.data()})
                 console.log(doc.data());
-                console.log(item);
             } else {
                 console.log('no existe el doc');
             }
         })
+        .catch(err => console.log(err))
+        .finally( () => {
+            setLoading(false) 
+        } ) */
+
+
+        
     }, [])
+    
+    async function guardarFormulario(name, email, message) {
+        try {
+            const formulario = await addDoc(collection(db, "messages"), {
+                name: name,
+                email: email,
+                message: message,
+            });
+            console.log("Formulario guardado correctamente");
+        } catch (error) {
+            console.error("Error al guardar el formulario: ", error);
+        }
+    }
+    function handleSubmit(e) {
+        e.preventDefault()
+        guardarFormulario(name, email, message)
+        setName("")
+        setEmail("")
+        setMessage("")
+    }
 
     return (
         <div id='body'>
 
             <NavBar />
 
-            <main className='mainContainer'>
+            {
+                loading ? <div className="text-center">
+                
+                                <h2> Cargando </h2>
+                            </div> :
+                <main className='mainContainer'>
 
-                <div className='contactContainer'>
 
-                    <div className='contact_intro'>
+                    <div className='contactContainer'>
 
-                        <h2>
-                            Let's chat.
-                        </h2>
-                        <h4>
-                            Tell <strong>me</strong> about
-                            your project.
-                        </h4>
-                        <p>
-                            We can create something together.
-                        </p>
+                        <div className='contact_intro'>
 
-                        <div className='contact_intro_social flexRowWrapContainer social_icons'>
-                            <div className='flexRowWrapContainer social_icons'>
-                                <div className="box">
-                                    <a target="_blank" rel='noreferrer' href="https://www.fb.com">
-                                        <FaIcons.FaFacebook />
-                                    </a>
-                                </div>
-                                <div className="box">
-                                    <a target="_blank" rel='noreferrer' href="https://www.fb.com">
-                                        <FaIcons.FaGithub />
-                                    </a>
-                                </div>
-                                <div className="box">
-                                    <a target="_blank" rel='noreferrer' href="https://www.fb.com">
-                                        <FaIcons.FaLinkedin />
-                                    </a>
+                            <h2>
+                                Let's chat.
+                            </h2>
+                            <h4>
+                                Tell <strong>me</strong> about
+                                your project.
+                            </h4>
+                            <p>
+                                We can create something together.
+                            </p>
+
+                            <div className='contact_intro_social flexRowWrapContainer social_icons'>
+                                <div className='flexRowWrapContainer social_icons'>
+                                    <div className="box">
+                                        <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                                            <FaIcons.FaFacebook />
+                                        </a>
+                                    </div>
+                                    <div className="box">
+                                        <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                                            <FaIcons.FaGithub />
+                                        </a>
+                                    </div>
+                                    <div className="box">
+                                        <a target="_blank" rel='noreferrer' href="https://www.fb.com">
+                                            <FaIcons.FaLinkedin />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <ContactForm sendForm={ (e) => handleSubmit(e) } />
+
                     </div>
 
-                    <ContactForm />
-
-                </div>
-
-            </main>
+                </main>
+            }
 
             <Footer />
 

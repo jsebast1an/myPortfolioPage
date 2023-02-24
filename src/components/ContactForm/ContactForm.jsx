@@ -3,7 +3,7 @@ import * as Bootstrap from 'react-bootstrap'
 /* css */
 import './contactForm.css'
 
-function ContactForm() {
+function ContactForm({sendForm}) {
     return (
         <div id='contactFormContainer'>
             <h2 className='flexCenterContainer h2Title'>
@@ -47,7 +47,7 @@ function ContactForm() {
 
                 </Bootstrap.FloatingLabel>
             </div>
-            <Bootstrap.Button variant='dark'>Send</Bootstrap.Button>
+            <Bootstrap.Button variant='dark' onClick={sendForm} >Send</Bootstrap.Button>
 
         </div>
     )
