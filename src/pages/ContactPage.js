@@ -6,17 +6,15 @@ import '../css/contactPage.css'
 import '../App.css'
 import ContactForm from '../components/ContactForm/ContactForm'
 import { useEffect, useState } from 'react'
-import { collection, getDocs, doc, getDoc, addDoc } from "firebase/firestore";
+/* import { collection, getDocs, doc, getDoc, addDoc } from "firebase/firestore"; */
 import { dbFirestore } from '../firebase'
 
 
 function ContactPage() {
     const messageId = 'GfPQs3oWYmLJDB6FNAei'
-    const [loading, setLoading] = useState(false)
-    /* const [item, setItem] = useState({}) */
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const loading = false
+    /* const [loading, setLoading] = useState(false)
+    const [item, setItem] = useState({}) */
 
     //iniciar firebase
     const db = dbFirestore;
@@ -56,25 +54,6 @@ function ContactPage() {
         
     }, [])
     
-    async function guardarFormulario(name, email, message) {
-        try {
-            const formulario = await addDoc(collection(db, "messages"), {
-                name: name,
-                email: email,
-                message: message,
-            });
-            console.log("Formulario guardado correctamente");
-        } catch (error) {
-            console.error("Error al guardar el formulario: ", error);
-        }
-    }
-    function handleSubmit(e) {
-        e.preventDefault()
-        guardarFormulario(name, email, message)
-        setName("")
-        setEmail("")
-        setMessage("")
-    }
 
     return (
         <div id='body'>
@@ -125,7 +104,7 @@ function ContactPage() {
                             </div>
                         </div>
 
-                        <ContactForm sendForm={ (e) => handleSubmit(e) } />
+                        <ContactForm />
 
                     </div>
 
