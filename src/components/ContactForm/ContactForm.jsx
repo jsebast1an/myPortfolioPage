@@ -19,6 +19,7 @@ function ContactForm() {
                     className='mb-3'
                 >
                     <Bootstrap.Form.Control 
+                        name='email'
                         type='email'/>
                         
                 </Bootstrap.FloatingLabel>
@@ -29,6 +30,7 @@ function ContactForm() {
                     className='mb-3'
                 >
                     <Bootstrap.Form.Control 
+                        name='name'
                         type='text'/>
 
                 </Bootstrap.FloatingLabel>
@@ -39,6 +41,7 @@ function ContactForm() {
                     className='mb-3'
                 >
                     <Bootstrap.Form.Control 
+                        name='message'
                         as='textarea'
                         style={{ height: '100px'}} />
 
