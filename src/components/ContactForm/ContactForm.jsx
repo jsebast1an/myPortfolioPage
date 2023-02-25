@@ -1,16 +1,21 @@
 import * as FaIcons from 'react-icons/fa'
 import * as Bootstrap from 'react-bootstrap'
+import { useState } from 'react'
+import { collection, addDoc } from "firebase/firestore";
+import { dbFirestore } from '../../firebase';
+
 /* css */
 import './contactForm.css'
-import { useState } from 'react'
-import { collection, getDocs, doc, getDoc, addDoc } from "firebase/firestore";
-import { dbFirestore } from '../../firebase';
+import { MySwal } from '../SweetAlert';
 
 
 function ContactForm() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    //para el modal
+    const [showAlert, setShowAlert] = useState(false)
+
 
     //inicializar firebase
     const db = dbFirestore
@@ -22,7 +27,15 @@ function ContactForm() {
                 email: email,
                 message: message,
             });
-            console.log("Formulario guardado correctamente");
+            MySwal.fire({
+                title: '¡Excelente!',
+                text: `${name} estaré contactándome contigo a tu correo ${email},
+                espero podamos trabajar juntos.` ,
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonText: 'Listo',
+            })
+            console.log("Formulario guardado correctamente")
         } catch (error) {
             console.error("Error al guardar el formulario: ", error);
         }
@@ -30,11 +43,16 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault()
         guardarFormulario(name, email, message)
+        setShowAlert(true)
         setName("")
         setEmail("")
         setMessage("")
     }
 
+    //cerrar modal
+    const handleCancel = () => {
+        setShowAlert(false)
+    }
 
     return (
         <div id='contactFormContainer'>

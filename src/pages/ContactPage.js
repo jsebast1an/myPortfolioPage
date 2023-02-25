@@ -5,20 +5,19 @@ import * as FaIcons from 'react-icons/fa'
 import '../css/contactPage.css'
 import '../App.css'
 import ContactForm from '../components/ContactForm/ContactForm'
-import { useEffect, useState } from 'react'
+import { useEffect, /* useState */ } from 'react'
 /* import { collection, getDocs, doc, getDoc, addDoc } from "firebase/firestore"; */
 import { dbFirestore } from '../firebase'
 
 
 function ContactPage() {
-    const messageId = 'GfPQs3oWYmLJDB6FNAei'
-    const loading = false
+/*     const messageId = 'GfPQs3oWYmLJDB6FNAei'
+ */    const loading = false
     /* const [loading, setLoading] = useState(false)
     const [item, setItem] = useState({}) */
 
     //iniciar firebase
-    const db = dbFirestore;
-
+/*     const db = dbFirestore; */
     useEffect(() => {
         /* 
         //para buscar por collection 
