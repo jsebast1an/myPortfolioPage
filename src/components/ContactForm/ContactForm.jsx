@@ -14,7 +14,6 @@ function ContactForm() {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     //para el modal
-    const [showAlert, setShowAlert] = useState(false)
 
 
     //inicializar firebase
@@ -22,6 +21,7 @@ function ContactForm() {
 
     async function guardarFormulario(name, email, message) {
         try {
+            console.log(name, message, email);
             await addDoc(collection(db, "messages"), {
                 name: name,
                 email: email,
@@ -43,15 +43,9 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault()
         guardarFormulario(name, email, message)
-        setShowAlert(true)
         setName("")
         setEmail("")
         setMessage("")
-    }
-
-    //cerrar modal
-    const handleCancel = () => {
-        setShowAlert(false)
     }
 
     return (

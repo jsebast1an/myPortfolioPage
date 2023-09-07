@@ -6,10 +6,10 @@ import * as FaIcons from 'react-icons/fa'
 import '../css/portfolioPage.css'
 import '../App.css'
 /* imgs */
-import project1 from '../imgs/project1.png'
 import project2 from '../imgs/project2.png'
 import project3 from '../imgs/project3.png'
 import project4 from '../imgs/project4.png'
+import projectTodoSi from '../imgs/projectTodoSi.png'
 
 
 function PortfolioPage() {
@@ -20,7 +20,14 @@ function PortfolioPage() {
             description: 'ReactJS basic store with database in <span>Firebase</span>, consuming APIs. ',
             view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
             code_url: 'https://github.com/jsebast1an/Adidas',
-            img: project1
+            img: project2
+        },
+        {
+            title: 'Todo Si Dropshipping',
+            description: 'Project for <span>Todo Si - Online Store</span>. Builded in ReactJS with FireBase.',
+            view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
+            code_url: 'https://github.com/jsebast1an/Adidas',
+            img: projectTodoSi
         },
         {
             title: 'La Farola',
