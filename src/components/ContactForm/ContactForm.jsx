@@ -22,7 +22,7 @@ function ContactForm() {
 
     async function guardarFormulario(name, email, message) {
         try {
-            const formulario = await addDoc(collection(db, "messages"), {
+            await addDoc(collection(db, "messages"), {
                 name: name,
                 email: email,
                 message: message,
@@ -56,7 +56,7 @@ function ContactForm() {
 
     return (
         <div id='contactFormContainer'>
-            <h2 className='flexCenterContainer h2Title'>
+            <h2 className='flexCenterContainer h2Title titleContactForm'>
                 <div className='flexRowWrapContainer'>
                     <FaIcons.FaMailBulk /><span>Send me a </span> <strong>message</strong>
                 </div>

@@ -13,6 +13,31 @@ import project4 from '../imgs/project4.png'
 
 
 function PortfolioPage() {
+
+    let projects = [
+        {
+            title: 'E-commerce Store',
+            description: 'ReactJS basic store with database in <span>Firebase</span>, consuming APIs. ',
+            view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
+            code_url: 'https://github.com/jsebast1an/Adidas',
+            img: project1
+        },
+        {
+            title: 'La Farola',
+            description: 'Functional e-commerce store <span>La Farola.</span> Is a 90% JavaScript\'s page.',
+            view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
+            code_url: 'https://github.com/jsebast1an/LaFarola2',
+            img: project4
+        },
+        {
+            title: 'Static Page',
+            description: 'Prototype for<span> La Farola - Fashion Store</span>. Using SASS for better compilation.',
+            view_url: 'https://jsebast1an.github.io/LaFarola/index.html' ,
+            code_url: 'https://github.com/jsebast1an/LaFarola',
+            img: project3
+        },
+    ]
+
     return (
         <div id='body'>
 
@@ -26,61 +51,30 @@ function PortfolioPage() {
                 </h2>
 
                 <div className='projectsContainer'>
-                    <div className='projectBox'>
-                        <img width={300} height={300} src={project2} alt='html'></img>
-                        <div className='projectBox_info'>
-                            <h4>E-commerce Store</h4>
-                            <p>
-                                ReactJS basic store with database in <span>Firebase</span>, consuming
-                                APIs. 
-                            </p>
-                            <div className='projectBox_buttons d-flex'>
-                                <Bootstrap.Button href='https://flamboyant-perlman-99b3f2.netlify.app' variant='dark'>
-                                    View <FaIcons.FaEye /> 
-                                </Bootstrap.Button>
 
-                                <Bootstrap.Button href='https://github.com/jsebast1an/Adidas' variant='warning'>
-                                    Code <FaIcons.FaCode /> 
-                                </Bootstrap.Button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='projectBox'>
-                        <img width={300} height={300} src={project4} alt='html'></img>
-                        <div className='projectBox_info'>
-                            <h4>La Farola</h4>
-                            <p>
-                                Functional e-commerce store <span>La Farola.</span> Is a 90% JavaScript's page.
-                            </p>
-                            <div className='projectBox_buttons d-flex'>
-                                <Bootstrap.Button href='https://flamboyant-perlman-99b3f2.netlify.app' variant='dark'>
-                                    View <FaIcons.FaEye /> 
-                                </Bootstrap.Button>
+                    {
+                            projects.map((project, index) => (
 
-                                <Bootstrap.Button href='https://github.com/jsebast1an/LaFarola2' variant='warning'>
-                                    Code <FaIcons.FaCode /> 
-                                </Bootstrap.Button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='projectBox'>
-                        <img width={300} height={300} src={project3} alt='html'></img>
-                        <div className='projectBox_info'>
-                            <h4>Static Page</h4>
-                            <p>
-                                Prototype for<span> La Farola - Fashion Store</span>. Using SASS for better compilation.
-                            </p>
-                            <div className='projectBox_buttons d-flex'>
-                                <Bootstrap.Button href='https://jsebast1an.github.io/LaFarola/index.html' variant='dark'>
-                                    View <FaIcons.FaEye /> 
-                                </Bootstrap.Button>
+                                <div className='projectBox'>
+                                    <img width={300} height={300} src={project.img} alt={`port_img_${index}`}></img>
 
-                                <Bootstrap.Button href='https://github.com/jsebast1an/LaFarola' variant='warning'>
-                                    Code <FaIcons.FaCode /> 
-                                </Bootstrap.Button>
-                            </div>
-                        </div>
-                    </div>
+                                        <div key={index} className='projectBox_info'>
+                                            <h4>{project.title}</h4>
+                                            
+                                            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                                            <div className='projectBox_buttons d-flex'>
+                                                <Bootstrap.Button href={project.view_url} variant='dark'>
+                                                    View <FaIcons.FaEye /> 
+                                                </Bootstrap.Button>
+
+                                                <Bootstrap.Button href={project.code_url} variant='warning'>
+                                                    Code <FaIcons.FaCode /> 
+                                                </Bootstrap.Button>
+                                            </div>
+                                        </div>
+                                </div>
+                            )) 
+                        }
                 </div>
 
 

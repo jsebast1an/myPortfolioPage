@@ -1,9 +1,11 @@
 /* contact container */
 
-.contactContainer
-{
+.contactContainer {
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 /* end */
@@ -27,3 +29,27 @@
 }
 
 /* end */
+
+/* title contact */
+.titleContactForm {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1400px) {
+    
+    .contact_intro h2 {
+        font-size: 3.6rem;
+    }
+    .contact_intro h4 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+    .contact_intro p {
+        font-size: 1.5rem;
+    }
+
+    .titleContactForm {
+        font-size: 2.6rem; 
+        margin-bottom: 3rem;
+    }
+}
