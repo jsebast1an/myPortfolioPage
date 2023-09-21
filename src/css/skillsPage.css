@@ -109,12 +109,12 @@
       transform: skew(0);
     }
   }
-  .hvr-wobble-skew {
+.hvr-wobble-skew {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-  }
-  .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+}
+.hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
     -webkit-animation-name: hvr-wobble-skew;
     animation-name: hvr-wobble-skew;
     -webkit-animation-duration: 1s;
@@ -123,4 +123,17 @@
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+
+
+@media screen and (width <= 820px) {
+  .h2Title {
+    margin: 1rem 0 1rem 0;
+    height: 2%;
   }
+  
+  .skillsContainer .skills_card {
+    margin: 0 .8rem;
+  }
+
+}

@@ -16,11 +16,16 @@ import NotFoundPage from "./pages/NotFoundPage"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import ModeBtn from "./components/modeBtn/ModeBtn"
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
 
 function App() {
+
+
     return (
       <BrowserRouter>
         
