@@ -67,3 +67,30 @@
 .sideBar ul li svg {
     margin: 0 5px;
 }
+
+/* mobile */
+.mobile_nav {
+    display: none;
+}
+
+
+@media screen and (width <= 820px) {
+    
+    .sideBar {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: block;
+        z-index: 0;
+        background: none;
+    }
+
+    .btnMode {
+        display: none;
+    }
+
+    .mid_circle {
+        display: none;
+    }
+}
