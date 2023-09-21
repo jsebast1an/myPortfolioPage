@@ -6,6 +6,7 @@ import * as FaIcons from 'react-icons/fa'
 import '../css/portfolioPage.css'
 import '../App.css'
 /* imgs */
+import project1 from '../imgs/project1.png'
 import project2 from '../imgs/project2.png'
 import project3 from '../imgs/project3.png'
 import project4 from '../imgs/project4.png'
@@ -15,6 +16,13 @@ import projectTodoSi from '../imgs/projectTodoSi.png'
 function PortfolioPage() {
 
     let projects = [
+        {
+            title: 'Full e-commerce store',
+            description: 'Laravel 9.0 project with auth, mailable and DB in <span>MySQL</span> consuming APIs.',
+            view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
+            code_url: 'https://github.com/jsebast1an/Adidas',
+            img: project1
+        },
         {
             title: 'E-commerce Store',
             description: 'ReactJS basic store with database in <span>Firebase</span>, consuming APIs. ',
