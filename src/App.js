@@ -10,17 +10,12 @@ import SkillsPage from "./pages/SkillsPage"
 import PortfolioPage from "./pages/PortfolioPage"
 import ContactPage from "./pages/ContactPage"
 import NotFoundPage from "./pages/NotFoundPage"
+import ModeBtn from "./components/modeBtn/ModeBtn"
 
 
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import ModeBtn from "./components/modeBtn/ModeBtn"
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-
 
 
 function App() {
