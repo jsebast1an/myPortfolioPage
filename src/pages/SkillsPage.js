@@ -33,9 +33,7 @@ function SkillsPage() {
         Aos.refresh();
     },[]) 
     return (
-        <div id='body'>
-
-            <NavBar />
+        <div id='skills'>
 
             <main className='mainContainer'>
                 <span className='mid_circle'></span>

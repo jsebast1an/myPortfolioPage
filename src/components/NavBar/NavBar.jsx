@@ -36,41 +36,31 @@ const sections = [
 function NavBar() {
     return (
 
-        <div id='body'>
+        <div>
 
             {/* PC navbar */}            
-            <div className='sideBar'>
+            <div id='sideBar' className='sideBar'>
 
                 <div className='logoContainer'>
                     Juan López
                 </div>
 
                 <ul className='menuContainer'> 
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/" end>
                         <li>
                             <FaIcons.FaHome /> Home
                         </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/about_me" end>
                         <li>
                             About me
                         </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/skills" end>
                         <li>
                             Skills
                         </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/portfolio" end>
                         <li>
                             {/* <FaIcons.FaToolbox /> */} Portfolio
                         </li>
-                    </NavLink>
-                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to="/contact" end>
                         <li>
                             {/* <FaIcons.FaPhoneSquareAlt /> */} Contact
                         </li>
-                    </NavLink>
                 </ul>
 
             </div>
@@ -83,10 +73,10 @@ function NavBar() {
                         sections.map((section, index) => (
      
                                 <li className='list' key={index}>
-                                    <NavLink className={ ({isActive}) => (isActive ? 'active' : '')} to={`${section.link}`} end>
+                                    <a className='' to={`${section.link}`}>
                                         <span className='icon'></span>
                                         <span className='text'>{section.name}</span>
-                                    </NavLink>
+                                    </a>
                                 </li>
                                 
                             )

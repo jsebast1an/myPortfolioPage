@@ -7,75 +7,52 @@
 {
     color: orange;
 }
+h2.flexCenterContainer.h2Title.about_title {
+    padding: 2.3rem 0 2.3rem 0;
+    background: black;
+    margin: 0;
+    color: white;
+}
 
 
 /* end */
 
 /* description */
-
-.description {
-    position: relative;
-    margin-top: 3rem;
-    max-width: 360px;
-    height: 360px;
+.about_description {
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow:
+    0px 13.9px 9.7px rgba(0, 0, 0, 0.321),
+    0px 53px 80px rgba(0, 0, 0, 0.38);
+    background-image: url(../imgs/bg.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: black;
-    color: aliceblue;
-    border-radius: 20px;
-    overflow: hidden;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    
 }
-.description::before {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, rgb(238, 201, 131));
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
+.about_description_title {
+    padding: 1rem 0;
+    background-image: url(../imgs/bigCircle.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 199, 88);
+    text-align: center;
+    font-size: 3rem;
+    font-weight:900;
+    letter-spacing: 7px;
 }
-.description::after {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, rgb(252, 195, 90));
-    animation: animate 6s linear infinite;
+.about_description_text {
+    padding: 2rem;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
 }
-
-.description .spann {
-    display: inline-block;
-    position: absolute;
-    inset: 5px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    z-index: 1;
-}
-/* animation for description */
-
-@keyframes animate 
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }   
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
-
-/* end */
-
-.description .text {
-    padding: 5px 32px;
-    text-align: justify;
-    z-index: 2;
-    color: black;
-}
-.description .btnResume
+.btnResume
 {
     display: flex;
     align-items: center;
@@ -87,13 +64,14 @@
     transition: 0.2s ease;
     font-weight: 600;
     z-index: 2;
+    width: 130px;
 }
-.description .btnResume:hover {
+.btnResume:hover {
     box-shadow: 1px 1px 10px rgb(30, 30, 30);
     background-color: rgb(135, 135, 244);
 
 }
-.description .btnResume svg  
+.btnResume svg  
 {
     margin-bottom: -2px;
     margin-left:6px ;

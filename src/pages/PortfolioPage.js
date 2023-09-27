@@ -54,9 +54,7 @@ function PortfolioPage() {
     ]
 
     return (
-        <div id='body'>
-
-            <NavBar />
+        <div id='portfolio'>
 
             <main className='mainContainer'>
                 <h2 className='flexCenterContainer h2Title'>

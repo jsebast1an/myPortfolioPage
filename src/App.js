@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 
+import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import SkillsPage from "./pages/SkillsPage"
@@ -16,29 +17,25 @@ import ModeBtn from "./components/modeBtn/ModeBtn"
 /* css */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
 
 
-    return (
-      <BrowserRouter>
-        
-        <ModeBtn />
+  return (
+    <div id="App">
+      <NavBar />
 
-        <Routes>
-          <Route exact path="/" element={ <HomePage /> } />
-          <Route exact path="/about_me" element={ <AboutPage /> } />
-          <Route exact path="/skills" element={ <SkillsPage /> } />
-          <Route exact path="/portfolio" element={ <PortfolioPage /> } />
-          <Route exact path="/contact" element={ <ContactPage /> } />
-          
-          <Route path="*" element={ <NotFoundPage /> } />
+      <HomePage />
 
-        </Routes>
-
-      </BrowserRouter>
-    )
+      <AboutPage />
+      <SkillsPage />
+      <PortfolioPage />
+      <ContactPage />
+      <Footer />
+    </div>
+  )
 }
 
 export default App;

@@ -10,10 +10,7 @@ import ContactForm from '../components/ContactForm/ContactForm'
 function ContactPage() {
 
     return (
-        <div id='body'>
-
-            <NavBar />
-
+        <div id='contact'>
 
                 <main className='mainContainer'>
 
