@@ -35,6 +35,26 @@
     margin-bottom: 1rem;
 }
 
+/* svg */
+.custom-shape-divider-top-1695925354 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1695925354 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1695925354 .shape-fill {
+    fill: #FDC33C;
+}
 @media screen and (min-width:1400px) {
     
     .contact_intro h2 {

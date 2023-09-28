@@ -2,7 +2,7 @@
 .skillsContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
 
 }
 
@@ -20,6 +20,10 @@
     z-index: 1;
 }
 
+.skills_title {
+  color: white;
+  margin: 2rem 0;
+}
 /* end */
 
 /* skill */
@@ -39,6 +43,7 @@
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgb(35, 35, 35);
     transition: all 0.2s linear;
+    z-index: 233;
 }
 .skill:hover
 {

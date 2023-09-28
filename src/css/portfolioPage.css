@@ -7,6 +7,15 @@
     padding: 2rem;
     flex-wrap: wrap;
 }
+.portfolio_title .flexRowWrapContainer
+{
+    z-index: 1;
+}
+.portfolio_title .flexRowWrapContainer strong
+{
+    color: white;
+
+}
 
 /* end */
 
@@ -21,6 +30,8 @@
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
     border-radius: 3px;
+    z-index: 1;
+
 }
 .projectBox img
 {
@@ -79,6 +90,33 @@
 }
 /* end */
 
+/* imgs absolutas */
+.svg_teamwork {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+    width: 200px;
+    height: auto; 
+}
+.custom-shape-divider-top-1695925125 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1695925125 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1695925125 .shape-fill {
+    fill: #ff970f;
+}
 
 /* MEDIA QUERIES */
 

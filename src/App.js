@@ -1,16 +1,9 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
 import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import SkillsPage from "./pages/SkillsPage"
 import PortfolioPage from "./pages/PortfolioPage"
 import ContactPage from "./pages/ContactPage"
-import NotFoundPage from "./pages/NotFoundPage"
 import ModeBtn from "./components/modeBtn/ModeBtn"
 
 

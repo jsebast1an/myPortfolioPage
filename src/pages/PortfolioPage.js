@@ -1,6 +1,4 @@
-import Footer from '../components/Footer/Footer'
-import NavBar from '../components/NavBar/NavBar'
-import * as Bootstrap from 'react-bootstrap'
+ import * as Bootstrap from 'react-bootstrap'
 import * as FaIcons from 'react-icons/fa'
 /* css */
 import '../css/portfolioPage.css'
@@ -51,49 +49,58 @@ function PortfolioPage() {
             code_url: 'https://github.com/jsebast1an/LaFarola',
             img: project3
         },
+        {
+            title: 'Static Page',
+            description: 'Prototype for<span> La Farola - Fashion Store</span>. Using SASS for better compilation.',
+            view_url: 'https://jsebast1an.github.io/LaFarola/index.html' ,
+            code_url: 'https://github.com/jsebast1an/LaFarola',
+            img: project3
+        },
     ]
 
     return (
         <div id='portfolio'>
 
-            <main className='mainContainer'>
-                <h2 className='flexCenterContainer h2Title'>
-                    <div className='flexRowWrapContainer'>
-                        <FaIcons.FaPencilRuler /> <span>My</span> <strong>Projects</strong>
-                    </div>
-                </h2>
-
-                <div className='projectsContainer'>
-
-                    {
-                            projects.map((project, index) => (
-
-                                <div className='projectBox'>
-                                    <img width={300} height={300} src={project.img} alt={`port_img_${index}`}></img>
-
-                                        <div key={index} className='projectBox_info'>
-                                            <h4>{project.title}</h4>
-                                            
-                                            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                                            <div className='projectBox_buttons d-flex'>
-                                                <Bootstrap.Button href={project.view_url} variant='dark'>
-                                                    View <FaIcons.FaEye /> 
-                                                </Bootstrap.Button>
-
-                                                <Bootstrap.Button href={project.code_url} variant='warning'>
-                                                    Code <FaIcons.FaCode /> 
-                                                </Bootstrap.Button>
-                                            </div>
-                                        </div>
-                                </div>
-                            )) 
-                        }
+            <h2 className='flexCenterContainer h2Title portfolio_title'>
+                <div className='flexRowWrapContainer'>
+                    <FaIcons.FaPencilRuler /> <span>My</span> <strong>Projects</strong>
                 </div>
+            </h2>
 
+            <div className='projectsContainer'>
 
-            </main>
+                {
+                        projects.map((project, index) => (
 
-            <Footer />
+                            <div className='projectBox'>
+                                <img width={300} height={300} src={project.img} alt={`port_img_${index}`}></img>
+
+                                    <div key={index} className='projectBox_info'>
+                                        <h4>{project.title}</h4>
+                                        
+                                        <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                                        <div className='projectBox_buttons d-flex'>
+                                            <Bootstrap.Button href={project.view_url} variant='dark'>
+                                                View <FaIcons.FaEye /> 
+                                            </Bootstrap.Button>
+
+                                            <Bootstrap.Button href={project.code_url} variant='warning'>
+                                                Code <FaIcons.FaCode /> 
+                                            </Bootstrap.Button>
+                                        </div>
+                                    </div>
+                            </div>
+                        )) 
+                    }
+            </div>
+
+            <div class="custom-shape-divider-top-1695925125">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            
 
         </div>
     )

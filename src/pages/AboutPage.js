@@ -1,5 +1,3 @@
-import Footer from '../components/Footer/Footer'
-import NavBar from '../components/NavBar/NavBar'
 import design from '../imgs/about_design.png'
 import * as FaIcons from 'react-icons/fa'
 /* css */
