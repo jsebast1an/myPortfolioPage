@@ -9,6 +9,7 @@ import project2 from '../imgs/project2.png'
 import project3 from '../imgs/project3.png'
 import project4 from '../imgs/project4.png'
 import projectTodoSi from '../imgs/projectTodoSi.png'
+import projectPaypal from '../imgs/projectPaypal.png'
 
 
 function PortfolioPage() {
@@ -17,8 +18,8 @@ function PortfolioPage() {
         {
             title: 'Full e-commerce store',
             description: 'Laravel 9.0 project with auth, mailable and DB in <span>MySQL</span> consuming APIs.',
-            view_url: 'https://flamboyant-perlman-99b3f2.netlify.app' ,
-            code_url: 'https://github.com/jsebast1an/Adidas',
+            view_url: 'https://www.youtube.com/watch?v=KirJkSZ1CRk' ,
+            code_url: 'https://github.com/jsebast1an/Wilmar',
             img: project1
         },
         {
@@ -43,11 +44,11 @@ function PortfolioPage() {
             img: project4
         },
         {
-            title: 'Static Page',
+            title: 'Fake PayPal',
             description: 'Prototype for<span> La Farola - Fashion Store</span>. Using SASS for better compilation.',
-            view_url: 'https://jsebast1an.github.io/LaFarola/index.html' ,
-            code_url: 'https://github.com/jsebast1an/LaFarola',
-            img: project3
+            view_url: 'https://jsebast1an.github.io/paypal/' ,
+            code_url: 'https://github.com/jsebast1an/paypal',
+            img: projectPaypal
         },
         {
             title: 'Static Page',
@@ -70,28 +71,28 @@ function PortfolioPage() {
             <div className='projectsContainer'>
 
                 {
-                        projects.map((project, index) => (
+                    projects.map((project, index) => (
 
-                            <div className='projectBox'>
-                                <img width={300} height={300} src={project.img} alt={`port_img_${index}`}></img>
+                        <div className='projectBox'>
+                            <img width={300} height={300} src={project.img} alt={`port_img_${index}`}></img>
 
-                                    <div key={index} className='projectBox_info'>
-                                        <h4>{project.title}</h4>
-                                        
-                                        <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                                        <div className='projectBox_buttons d-flex'>
-                                            <Bootstrap.Button href={project.view_url} variant='dark'>
-                                                View <FaIcons.FaEye /> 
-                                            </Bootstrap.Button>
+                                <div key={index} className='projectBox_info'>
+                                    <h4>{project.title}</h4>
+                                    
+                                    <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                                    <div className='projectBox_buttons d-flex'>
+                                        <Bootstrap.Button href={project.view_url} variant='dark'>
+                                            View <FaIcons.FaEye /> 
+                                        </Bootstrap.Button>
 
-                                            <Bootstrap.Button href={project.code_url} variant='warning'>
-                                                Code <FaIcons.FaCode /> 
-                                            </Bootstrap.Button>
-                                        </div>
+                                        <Bootstrap.Button href={project.code_url} variant='warning'>
+                                            Code <FaIcons.FaCode /> 
+                                        </Bootstrap.Button>
                                     </div>
-                            </div>
-                        )) 
-                    }
+                                </div>
+                        </div>
+                    )) 
+                }
             </div>
 
             <div class="custom-shape-divider-top-1695925125">
